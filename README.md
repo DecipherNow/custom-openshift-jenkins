@@ -18,7 +18,13 @@ oc new-build jenkins:2~https://github.com/deciphernow/custom-openshift-jenkins.g
 
 This command creates a new ImageStream and BuildConfig for the custom Jenkins image.
 
+## Deploy Jenkins with the new Image
 
+This command increases the Memory Limit from the default of 512M to 2G; uses the jenkins namespace and our new custom-jenkins image
+
+```bash
+oc process -p MEMORY_LIMIT=2Gi -p NAMESPACE=jenkins -p JENKINS_IMAGE_STREAM_TAG=custom-jenkins:latest -n openshift jenkins-ephemeral | oc apply -f-
+```
 
 ## Resources
 
