@@ -1,0 +1,5 @@
+blueocean:latest
+slack:latest
+dockerhub-notification:latest
+docker-workflow:latest
+build-pipeline-plugin:latest
