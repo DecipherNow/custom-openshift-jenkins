@@ -23,5 +23,3 @@ This command creates a new ImageStream and BuildConfig for the custom Jenkins im
 ## Resources
 
 This repo is based heavily from https://github.com/siamaksade/jenkins-blueocean and the corresponding YouTube video: https://www.youtube.com/watch?v=IQ8H7XNbQ-8
-
-https://github.com/Cingulara/custom-jenkins-openshift
